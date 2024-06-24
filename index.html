@@ -182,7 +182,7 @@
                            <label for="one-time" class="font-bold cursor-pointer">One Time Purchase</label>
                         </div>
                         <div class="flex space-x-1 font-bold text-sm">
-                           <span class="inline-block line-through opacity-50 subtotal">$74</span>
+                           <span class="inline-block line-through opacity-50 one-set-subtotal subtotal">$74</span>
                            <span class="inline-block one-time-subtotal-after-discount">$69</span>
                         </div>
                      </div>
@@ -693,6 +693,20 @@
                   element.textContent = radio.value;
                });
                console.log(price, selectedIndex);
+            });
+            radio.addEventListener('change', () => {
+               const selectedIndex = getSelectedIndex();
+               if (selectedIndex === 0) {
+                  document.querySelectorAll('.one-set-subtotal').forEach(element => {
+                     element.classList.add('hidden');
+                     element.classList.remove('block');
+                  });
+               } else {
+                  document.querySelectorAll('.one-set-subtotal').forEach(element => {
+                     element.classList.add('block');
+                     element.classList.remove('hidden');
+                  });
+               }
             });
          });
 
