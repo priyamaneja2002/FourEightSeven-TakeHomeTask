@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./src/output.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <title>TakeHomeTask</title>
+</head>
+
+<body class="bg-[#f6e6d9]">
+   <div class="relative flex flex-col lg:flex-row gap-5 lg:gap-0 mb-[3.75rem]">
+      <!-- Carousel -->
+      <div class="relative lg:sticky lg:top-0 w-full lg:w-1/2 lg:h-fit">
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="w-full lg:h-screen">
+                     <div class="w-full aspect-4-5 lg:h-full lg:p-0 pb-[125%] bg-[#f6e6d9] relative object-cover">
+                        <img src='./assets/img-1.webp' class="h-full w-full absolute left-0 top-0">
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="w-full lg:h-screen">
+                     <div class="w-full aspect-4-5 lg:h-full lg:p-0 pb-[125%] bg-[#f6e6d9] relative object-cover">
+                        <img src='./assets/img-2.webp' class="h-full w-full absolute left-0 top-0">
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="w-full lg:h-screen">
+                     <div class="w-full aspect-4-5 lg:h-full lg:p-0 pb-[125%] bg-[#f6e6d9] relative object-cover">
+                        <img src='./assets/img-3.webp' class="h-full w-full absolute left-0 top-0">
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="w-full lg:h-screen">
+                     <div class="w-full aspect-4-5 lg:h-full lg:p-0 pb-[125%] bg-[#f6e6d9] relative object-cover">
+                        <img src='./assets/img-4.webp' class="h-full w-full absolute left-0 top-0">
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="w-full lg:h-screen">
+                     <div class="w-full aspect-4-5 lg:h-full lg:p-0 pb-[125%] bg-[#f6e6d9] relative object-cover">
+                        <img src='./assets/img-5.webp' class="h-full w-full absolute left-0 top-0">
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="w-full lg:h-screen">
+                     <div class="w-full aspect-4-5 lg:h-full lg:p-0 pb-[125%] bg-[#f6e6d9] relative object-cover">
+                        <img src='./assets/img-6.webp' class="h-full w-full absolute left-0 top-0">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-pagination lg:hidden -mb-7"></div>
+      </div>
+      <!-- Content -->
+      <div class="lg:mt-20 lg:w-1/2 lg:pt-5 pt-6">
+         <div class="flex flex-col items-center md:w-2/3 lg:w-full xl:w-3/4 mx-auto">
+            <div class="mx-auto flex flex-col items-center gap-5 lg:gap-10 max-w-[1440px]">
+               <div class="">
+                  <h1
+                     class="mx-auto text-[#3c422e] text-5xl lg:text-6xl items-center flex justify-center flex-col pt-2 leading-[0.8] whitespace-nowrap w-fit">
+                     "The Duo"
+                  </h1>
+                  <h2
+                     class="mx-auto text-[#3c422e] text-5xl lg:text-6xl items-center flex justify-center flex-col pt-2 leading-[0.8] whitespace-nowrap w-fit">
+                     <u>Drizzle & Sizzle Set</u>
+                  </h2>
+               </div>
+               <a href="" class="flex items-center">
+                  <div class="text-[#3C422E] text-xl">
+                     ★★★★★
+                  </div>
+                  <div class="font-medium ml-2.5">
+                     2026 Reviews
+                  </div>
+               </a>
+            </div>
+            <div class="w-full md:mx-auto max-w-[1440px] md:px-8">
+               <form id="add-to-cart"
+                  class="w-full p-5 mt-5 bg-[#fff4ec] border-[#3C422E] border-y md:rounded-3xl md:border-x">
+                  <div id="product-options">
+                     <fieldset>
+                        <legend class="font-medium">Quantity</legend>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 mt-2">
+                           <div class="w-full">
+                              <input type="radio" class="sr-only peer" name="option1" id="1 Set" value="1">
+                              <label for="1 Set"
+                                 class="peer-checked:bg-[#9eef80] flex flex-col bg-transparent gap-1 min-h-20 overflow-hidden text-center w-full items-center border rounded-lg cursor-pointer h-full border-[#3C422E] hover:bg-[#f6e6d9] duration-300">
+                                 <div class="text-[#fff4ec] p-1 w-full bg-[#3C422E] delivery-discount-container">
+                                    <span
+                                       class="flex flex-col items-center justify-center text-center text-[0.625rem] leading-none gap-0.5 min-h-7">
+                                       <span>
+                                          +<span class="discount-available"></span>% Off
+                                       </span>
+                                    </span>
+                                 </div>
+                                 <strong class="flex flex-col justify-center items-center text-center p-1 h-full">
+                                    <span class="font-medium text-xl leading-none">1</span>
+                                    <span class="text-[0.75rem] font-medium">Set</span>
+                                 </strong>
+                              </label>
+                           </div>
+                           <div class="w-full">
+                              <input type="radio" checked class="sr-only peer" name="option1" id="2 Sets" value="2">
+                              <label for="2 Sets"
+                                 class="peer-checked:bg-[#9eef80] flex flex-col bg-transparent gap-1 min-h-20 overflow-hidden text-center w-full items-center border rounded-lg cursor-pointer h-full border-[#3C422E] hover:bg-[#f6e6d9] duration-300">
+                                 <div class="text-[#fff4ec] p-1 w-full bg-[#3C422E]">
+                                    <span
+                                       class="flex flex-col items-center justify-center text-center text-[0.625rem] leading-none gap-0.5 min-h-7">
+                                       <span>Free Shipping!</span>
+                                       <span>
+                                          +<span class="discount-available"></span>% Off
+                                       </span>
+                                    </span>
+                                 </div>
+                                 <strong class="flex flex-col justify-center items-center text-center p-1 h-full">
+                                    <span class="font-medium text-xl leading-none">2</span>
+                                    <span class="text-[0.75rem] font-medium">Sets</span>
+                                 </strong>
+                              </label>
+                           </div>
+                           <div class="w-full">
+                              <input type="radio" class="sr-only peer" name="option1" id="3 Sets" value="3">
+                              <label for="3 Sets"
+                                 class="peer-checked:bg-[#9eef80] flex flex-col bg-transparent gap-1 min-h-20 overflow-hidden text-center w-full items-center border rounded-lg cursor-pointer h-full border-[#3C422E] hover:bg-[#f6e6d9] duration-300">
+                                 <div class="text-[#fff4ec] p-1 w-full bg-[#3C422E]">
+                                    <span
+                                       class="flex flex-col items-center justify-center text-center text-[0.625rem] leading-none gap-0.5 min-h-7">
+                                       <span>Free Shipping!</span>
+                                       <span>
+                                          +<span class="discount-available"></span>% Off
+                                       </span>
+                                    </span>
+                                 </div>
+                                 <strong class="flex flex-col justify-center items-center text-center p-1 h-full">
+                                    <span class="font-medium text-xl leading-none">3</span>
+                                    <span class="text-[0.75rem] font-medium">Sets</span>
+                                 </strong>
+                              </label>
+                           </div>
+                           <div class="w-full">
+                              <input type="radio" class="sr-only peer" name="option1" id="6 Sets" value="6">
+                              <label for="6 Sets"
+                                 class="peer-checked:bg-[#9eef80] flex flex-col bg-transparent gap-1 min-h-20 overflow-hidden text-center w-full items-center border rounded-lg cursor-pointer h-full border-[#3C422E] hover:bg-[#f6e6d9] duration-300">
+                                 <div class="text-[#fff4ec] p-1 w-full bg-[#3C422E]">
+                                    <span
+                                       class="flex flex-col items-center justify-center text-center text-[0.625rem] leading-none gap-0.5 min-h-7">
+                                       <span>Free Shipping!</span>
+                                       <span>
+                                          +<span class="discount-available"></span>% Off
+                                       </span>
+                                    </span>
+                                 </div>
+                                 <strong class="flex flex-col justify-center items-center text-center p-1 h-full">
+                                    <span class="font-medium text-xl leading-none">6</span>
+                                    <span class="text-[0.75rem] font-medium">Sets</span>
+                                 </strong>
+                              </label>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <fieldset class="mt-2.5 border-y border-dashed border-[#3C422E]" id="product-subscription">
+                     <div
+                        class="flex justify-between items-center py-4 cursor-pointer group one-time border-b border-dashed border-[#3C422E]">
+                        <div class="flex items-center space-x-2.5">
+                           <input type="radio" name="subscription" id="one-time-purchase" value="false"
+                              class="checked:bg-[#9eef80] appearance-none border border-[#3C422E] rounded-full cursor-pointer h-5 w-5 duration-300">
+                           <label for="one-time" class="font-medium cursor-pointer">One Time Purchase</label>
+                        </div>
+                        <div class="flex space-x-1 font-medium text-sm">
+                           <span class="inline-block line-through opacity-50 subtotal">$74</span>
+                           <span class="inline-block one-time-subtotal-after-discount">$69</span>
+                        </div>
+                     </div>
+                     <div class="flex flex-col gap-4 pb-4">
+                        <div class="flex justify-between items-center py-4 pb-0 cursor-pointer group subscription">
+                           <div class="flex items-center space-x-2.5">
+                              <input type="radio" checked name="subscription" value="true" id="subscribe"
+                                 class="checked:bg-[#9eef80] appearance-none border border-[#3C422E] rounded-full cursor-pointer h-5 w-5 duration-300">
+                              <label for="subscription" class="font-medium cursor-pointer">Subscribe & Save</label>
+                           </div>
+                           <div class="flex space-x-1 font-medium text-sm">
+                              <span class="inline-block line-through opacity-50 subtotal">$74</span>
+                              <span class="inline-block subscription-subtotal-after-discount">$64.17</span>
+                           </div>
+                        </div>
+                        <div class="flex flex-col gap-2 subscription-options">
+                           <div
+                              class="h-8 custom-select relative w-full duration-300 bg-highlight border border-[#3c422e] rounded-[1.25rem] font-medium overflow-hidden"
+                              onclick="toggleHeight(this)">
+                              <label for="frequency" class="sr-only">Frequency</label>
+                              <select name="frequency" id="frequency" class="sr-only">
+                                 <option selected value="Every 1 Month">Every 1 Month</option>
+                                 <option value="Every 2 Months">Every 2 Months</option>
+                                 <option value="Every 3 Months">Every 3 Months</option>
+                              </select>
+                              <div id="selected-frequency"
+                                 class="h-8 px-5 flex items-center justify-between cursor-pointer lg:hover:bg-[#f6e6d9] duration-300">
+                                 <div class="space-x-1">
+                                    <span class="inline-block">Frequency:</span>
+                                    <span class="inline-block">Every 1 Month</span>
+                                 </div>
+                                 <span>
+                                    <svg class="transform transition-transform flex-shrink-0 toggle-rotate" width="10"
+                                       height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M8.53553 1.34217L5 4.87771L1.46447 1.34217" stroke="#3C422E"
+                                          stroke-linecap="round"></path>
+                                    </svg>
+                                 </span>
+                              </div>
+                              <ul class="absolute top-8 inset-x-0 list-none bg-[#FFF4EC] m-0 p-0">
+                                 <li id="every-2-months"
+                                    class="frequency-option h-8 px-5 flex items-center space-x-1 cursor-pointer lg:hover:bg-[#f6e6d9] duration-300">
+                                    <span class="inline-block opacity-0">Frequency:</span>
+                                    <span class="inline-block">Every 2 Months</span>
+                                 </li>
+                                 <li id="every-3-months"
+                                    class="frequency-option h-8 px-5 flex items-center space-x-1 cursor-pointer lg:hover:bg-[#f6e6d9] duration-300">
+                                    <span class="inline-block opacity-0">Frequency:</span>
+                                    <span class="inline-block">Every 3 Months</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="flex flex-col gap-4 subscription-options">
+                           <fieldset>
+                              <legend for="properties[_recurring]" class="font-medium mb-2.5"> Select Refill Preference:
+                              </legend>
+                              <div class="flex items-stretch gap-2.5">
+                                 <div class="w-full">
+                                    <input type="radio" checked name="properties[_recurring]" id="Refill Cans"
+                                       class="sr-only peer" value="cans">
+                                    <label for="Refill Cans"
+                                       class="peer-checked:bg-[#9eef80] bg-[#f6e6d9] flex items-center justify-center cursor-pointer border peer-checked:border-opacity-100 border-opacity-0 rounded-lg h-full duration-300 border-[#3C422E]">
+                                       <span class=" flex flex-shrink-0">
+                                          <figure class="w-[4.5rem] h-20">
+                                             <img src="./assets/image-7.avif" alt="Refill Cans">
+                                          </figure>
+                                       </span>
+                                       <span class="flex flex-col gap-1 pr-2.5 py-4">
+                                          <span class="font-medium text-sm leading-tight">Refill Cans</span>
+                                          <span class="text-[0.625rem]"><span
+                                                class="subscription-subtotal-after-discount"></span>/order</span>
+                                       </span>
+                                    </label>
+                                 </div>
+                                 <div class="w-full">
+                                    <input type="radio" name="properties[_recurring]" id="Squeeze Bottles"
+                                       class="sr-only peer" value="bottles">
+                                    <label for="Squeeze Bottles"
+                                       class="peer-checked:bg-[#9eef80] bg-[#f6e6d9] flex items-center justify-center cursor-pointer border peer-checked:border-opacity-100 border-opacity-0 rounded-lg h-full duration-300 border-[#3C422E]">
+                                       <span class=" flex flex-shrink-0">
+                                          <figure class="w-[4.5rem] h-20">
+                                             <img src="./assets/image-8.avif" alt="Squeeze Bottles">
+                                          </figure>
+                                       </span>
+                                       <span class="flex flex-col gap-1 pr-2.5 py-4">
+                                          <span class="font-medium text-sm leading-tight">Squeeze Bottles</span>
+                                          <span class="text-[0.625rem]"><span
+                                                class="subscription-subtotal-after-discount"></span>/order</span>
+                                       </span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </fieldset>
+                           <ul class="flex flex-col gap-2.5">
+                              <li class="list-item list-none">
+                                 <span class="uppercase font-medium block leading-none">First Order:</span>
+                                 <span class="amount-of-sets">2</span> Sizzle Bottles, <span
+                                    class="amount-of-sets">2</span> Drizzle Bottles
+                              </li>
+                              <li class="list-item list-none">
+                                 <span class="uppercase font-medium block leading-none">Recurring:</span>
+                                 <span class="amount-of-sets">2</span> Sizzle <span class="refill-options"></span>,
+                                 <span class="amount-of-sets">2</span> Drizzle <span class="refill-options"></span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </fieldset>
+                  <fieldset class="mt-4" id="product-purchase">
+                     <button type="submit"
+                        class="font-medium h-[2.125rem] add-to-cart cursor-pointer px-4 z-10 flex bg-[#d1e030] rounded-full border border-[#3c422e] items-center justify-center text-[#3c422e] leading-none w-full text-center relative">
+                        <span class="add-to-cart-text">Subscribe - </span>
+                        <span class="subtotal-after-discount">$74</span>
+                     </button>
+                     <div class="text-center text-sm mt-2.5 subscription-update-text">Skip, Edit or Cancel Anytime</div>
+                     <div class="text-center text-base mt-2.5 underline cursor-pointer send-as-a-gift-text">Send as a
+                        gift</div>
+                  </fieldset>
+               </form>
+               <div class="px-8 md:px-0 mx-auto max-w-[1440px] w-full one-time-options">
+                  <div
+                     class="w-full p-4 mt-5 bg-[#fff4ec] rounded-3xl border border-[#3c422e] flex flex-row items-center">
+                     <figure class="w-[120px] h-[120px] flex-shrink-0">
+                        <img src="./assets/img-10.avif" alt="cans" class="w-full h-full object-cover">
+                     </figure>
+                     <div
+                        class="w-full h-full flex flex-col items-center lg:items-start justify-center gap-2.5 text-center lg:text-left p-4">
+                        <span class="uppercase leading-none font-medium">Get Refills!</span>
+                        <p class="leading-none">“The Duo” Refill Cans</p>
+                        <button
+                           class="h-[1.875rem] px-[1.125rem] border border-[#3c422e] rounded-full font-medium mt-[2px]">
+                           <span>Add - </span>
+                           <span class="one-time-subtotal-after-discount">$68.82</span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="w-full mx-auto max-w-[1440px] px-8 md:px-8">
+               <div
+                  class="w-full p-4 mt-5 bg-[#fff4ec] border border-[#3c422e] rounded-[1.25rem] flex flex-row items-center">
+                  <img src="./assets/image-9.webp" alt="gifts" height="75" width="75">
+                  <div class="ml-5"> Buying multiple gifts? Send to multiple addresses
+                     <a href="" class="underline">here</a>.
+                  </div>
+               </div>
+               <div class="mt-10 w-full">
+                  <ul class="flex items-end justify-between w-full h-8 overflow-visible">
+                     <li onclick="toggleContent('details')" data-tab="details"
+                        class="tab-item active text-[#3c422e] bg-[#f6e6d9] hover:bg-[#fff4ec] h-9 flex items-center justify-center text-center whitespace-nowrap w-full rounded-t-[0.625rem] border-[#3c422e] border-t first:border-l border-r cursor-pointer">
+                        <span class="font-medium uppercase">Details</span>
+                     </li>
+                     <li onclick="toggleContent('harvest')" data-tab="harvest"
+                        class="tab-item text-[#3c422e] bg-[#f6e6d9] hover:bg-[#fff4ec] h-9 flex items-center justify-center text-center whitespace-nowrap w-full rounded-t-[0.625rem] border-[#3c422e] border-t first:border-l border-r cursor-pointer">
+                        <span class="font-medium uppercase">Harvest</span>
+                     </li>
+                     <li onclick="toggleContent('uses')" data-tab="uses"
+                        class="tab-item text-[#3c422e] bg-[#f6e6d9] hover:bg-[#fff4ec] h-9 flex items-center justify-center text-center whitespace-nowrap w-full rounded-t-[0.625rem] border-[#3c422e] border-t first:border-l border-r cursor-pointer">
+                        <span class="font-medium uppercase">Uses</span>
+                     </li>
+                     <li onclick="toggleContent('refills')" data-tab="refills"
+                        class="tab-item text-[#3c422e] bg-[#f6e6d9] hover:bg-[#fff4ec] h-9 flex items-center justify-center text-center whitespace-nowrap w-full rounded-t-[0.625rem] border-[#3c422e] border-t first:border-l border-r cursor-pointer">
+                        <span class="font-medium uppercase">Refills</span>
+                     </li>
+                  </ul>
+                  <div id="details-content"
+                     class="tab-content py-5 px-2.5 border border-[#3c422e] rounded-b-[0.625rem] richtext--caps space-y-5">
+                     <div class="flex flex-col gap-4">
+                        <p>
+                           <strong>Drizzle: 500ML</strong>
+                           <br>
+                           <br>
+                           Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and
+                           antioxidants are highest. Made for eating, not heating.
+                        </p>
+                        <p>
+                           <strong>Sizzle: 750ML</strong>
+                           <br>
+                           <br>
+                           Extra Virgin cooking oil made from mature, mid-season olives that yield a more mellow flavor.
+                           Use it every day, in every way.
+                        </p>
+                     </div>
+                  </div>
+                  <div id="harvest-content"
+                     class="tab-content py-5 px-2.5 border border-[#3c422e] rounded-b-[0.625rem] richtext--caps space-y-5"
+                     style="display: none;">
+                     <div class="flex flex-col gap-4">
+                        <p>
+                           <strong>Drizzle: </strong>
+                           Harvested in October, before the olives have ripened fully. Picked by hand because young
+                           olives need a firm yank to loosen up.
+                        </p>
+                        <p>
+                           <strong>Sizzle: </strong>
+                           Harvested in November and December, when the olives are more mature. They're pretty laid back
+                           by this point, so it only takes a few shakes to get them off the branch.
+                        </p>
+                     </div>
+                  </div>
+                  <div id="uses-content"
+                     class="tab-content py-5 px-2.5 border border-[#3c422e] rounded-b-[0.625rem] richtext--caps space-y-5"
+                     style="display: none;">
+                     <div class="flex flex-col gap-4">
+                        <p>
+                           <strong>Drizzle: </strong>
+                           A little Drizzle goes a long way! Put it on your ice cream or popcorn, whip up a pesto or
+                           salad dressing, or drink it straight from a spoon (we won't tell).
+                        </p>
+                        <p>
+                           <strong>Sizzle: </strong>
+                           If you would put it in or on top of an oven, use Sizzle. Chicken cutlets, sheet pan veggies,
+                           fried rice, or even chocolate chip cookies! You name it, Sizzle Sizzles it.
+                        </p>
+                     </div>
+                  </div>
+                  <div id="refills-content"
+                     class="tab-content py-5 px-2.5 border border-[#3c422e] rounded-b-[0.625rem] richtext--caps space-y-5"
+                     style="display: none;">
+                     <div class="flex flex-col gap-4">
+                        <p><strong>“DRIZZLE” REFILL CAN: 500 ML</strong></p>
+                        <p><strong>“SIZZLE” REFILL CAN: 750 ML</strong></p>
+                        <p>Perfectly portioned and 100% recyclable, our “beer can” refills are designed to keep your
+                           delicious olive oil super fresh. Just crack open, pour into a squeeze bottle (using a kitchen
+                           funnel!) and get cookin'.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <style>
+      .active {
+         background-color: #3c422e;
+         color: #f6e6d9;
+      }
+
+      .active:hover {
+         background-color: #3c422e;
+         color: #f6e6d9;
+      }
+
+      input[type="radio"]:not(:checked):hover {
+         background-color: #f6e6d9;
+         /* The hover background color */
+      }
+
+      /* .add-to-cart::before {
+         padding-left: 1rem;
+         padding-right: 1rem;
+         align-items: center;
+         background-color: #d1e030;
+         border: 0.25px solid #3c422e;
+         border-radius: 9999px;
+         content: 'Subscribe - $74';
+         display: flex;
+         inset: 0;
+         justify-content: center;
+         position: absolute;
+         transition: transform .3s ease-in-out;
+         z-index: 2;
+      }
+
+      .add-to-cart:hover::before {
+         translate: 3px 3px;
+         animation-duration: 0.3s;
+      }
+
+      .add-to-cart::after {
+         background-image: linear-gradient(45deg, #3c422e 25%, transparent 25%), linear-gradient(-45deg, #3c422e 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #3c422e 75%), linear-gradient(-45deg, transparent 75%, #3c422e 75%);
+         background-position: 0 0, 0 3px, 3px -3px, -3px 0;
+         background-size: 6px 6px;
+         border: 1px solid #3c422e;
+         border-radius: 9999px;
+         content: "";
+         height: 100%;
+         position: absolute;
+         width: 100%;
+         z-index: 1;
+         left: .25rem;
+         top: .25rem;
+      } */
+
+      .swiper {
+         width: 100%;
+         height: 100%;
+      }
+
+      .swiper-slide {
+         text-align: center;
+         font-size: 18px;
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .swiper-slide img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      /* .swiper-pagination {
+         position: absolute;
+         bottom: -100%;
+         z-index: 100;
+      } */
+
+      .swiper-pagination-bullet {
+         color: #000;
+         opacity: 1;
+         background: rgba(0, 0, 0, 0);
+         border: solid 0.5px #3c422e;
+      }
+
+      .swiper-pagination-bullet-active {
+         color: #fff;
+         background: #9eef80;
+      }
+   </style>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+         loop: true,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+      });
+
+      document.querySelectorAll('.frequency-option').forEach(item => {
+         item.addEventListener('click', function () {
+            const selectedDiv = document.querySelector('#selected-frequency .space-x-1');
+            const selectedValue = selectedDiv.querySelector('span:last-child').innerText;
+            const clickedValue = this.querySelector('span:last-child').innerText;
+
+            // Swap the values
+            selectedDiv.querySelector('span:last-child').innerText = clickedValue;
+            this.querySelector('span:last-child').innerText = selectedValue;
+
+            // Update the select element's value
+            document.querySelector('#frequency').value = clickedValue;
+         });
+      });
+
+      function toggleContent(tab) {
+
+         // Get all elements with class="tab-item"
+         let tabItems = document.querySelectorAll('.tab-item');
+         tabItems.forEach(item => {
+            item.classList.remove('active');
+         });
+
+         // Add 'active' class to the clicked tab item
+         document.querySelector(`.tab-item[data-tab='${tab}']`).classList.add('active');
+
+         // Hide all content sections
+         document.getElementById('details-content').style.display = 'none';
+         document.getElementById('harvest-content').style.display = 'none';
+         document.getElementById('uses-content').style.display = 'none';
+         document.getElementById('refills-content').style.display = 'none';
+         // Display the selected tab's content
+         document.getElementById(tab + '-content').style.display = 'block';
+      }
+
+      function toggleHeight(element) {
+         element.classList.toggle('h-24');
+         document.querySelector('.toggle-rotate').classList.toggle('rotate-180');
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+         const subscribeRadio = document.getElementById('subscribe');
+         const oneTimeRadio = document.getElementById('one-time-purchase');
+         const subscribeOptions = document.querySelectorAll('.subscription-options');
+         const oneTimeOptions = document.querySelectorAll('.one-time-options');
+         const discountTable = {
+            'one-time': [0, 7, 9, 11],
+            'subscribe': [10, 14, 15, 17]
+         }
+
+         function updateDiscounts() {
+            const discountContainers = document.querySelectorAll('.discount-available');
+            const deliveryDiscountContainer = document.querySelector('.delivery-discount-container');
+            const price = getPriceFromSelectedOption();
+            const selectedIndex = getSelectedIndex();
+            const addToCartButton = document.querySelector('.add-to-cart-text');
+            const subscriptionUpdatetext = document.querySelector('.subscription-update-text');
+            const sendAsAGiftText = document.querySelector('.send-as-a-gift-text');
+
+            discountContainers.forEach((container, index) => {
+               if (subscribeRadio.checked) {
+                  deliveryDiscountContainer.classList.add('block');
+                  deliveryDiscountContainer.classList.remove('hidden');
+
+                  subscriptionUpdatetext.classList.add('block');
+                  subscriptionUpdatetext.classList.remove('hidden');
+                  sendAsAGiftText.classList.add('hidden');
+                  sendAsAGiftText.classList.remove('block');
+
+                  container.textContent = discountTable['subscribe'][index];
+                  addToCartButton.textContent = 'Subscribe - ';
+               } else {
+                  subscriptionUpdatetext.classList.add('hidden');
+                  subscriptionUpdatetext.classList.remove('block');
+                  sendAsAGiftText.classList.add('block');
+                  sendAsAGiftText.classList.remove('hidden');
+
+                  container.textContent = discountTable['one-time'][index];
+                  if (index === 0) {
+                     deliveryDiscountContainer.classList.add('hidden');
+                     deliveryDiscountContainer.classList.remove('block');
+                  }
+                  addToCartButton.textContent = 'Add to Cart - ';
+               }
+            });
+            subtotalAfterDiscount(price, selectedIndex);
+         }
+
+         function toggleSubscribeOptions() {
+            subscribeOptions.forEach(option => {
+               if (subscribeRadio.checked) {
+                  option.classList.remove('hidden');
+               } else {
+                  option.classList.add('hidden');
+               }
+            });
+         }
+
+         function toggleOneTimeOptions() {
+            oneTimeOptions.forEach(option => {
+               if (oneTimeRadio.checked) {
+                  option.classList.remove('hidden');
+               } else {
+                  option.classList.add('hidden');
+               }
+            });
+            console.log('toggleOneTimeOptions');
+         }
+
+         subscribeRadio.addEventListener('change', updateDiscounts);
+         oneTimeRadio.addEventListener('change', updateDiscounts);
+         subscribeRadio.addEventListener('change', toggleSubscribeOptions);
+         oneTimeRadio.addEventListener('change', toggleSubscribeOptions);
+         subscribeRadio.addEventListener('change', toggleOneTimeOptions);
+         oneTimeRadio.addEventListener('change', toggleOneTimeOptions);
+
+         // Initialize visibility on page load
+         toggleSubscribeOptions();
+         updateDiscounts();
+         toggleOneTimeOptions();
+
+         function getPriceFromSelectedOption() {
+            const selectedOption = document.querySelector('input[name="option1"]:checked');
+            let price = 0;
+            if (selectedOption) {
+               switch (selectedOption.value) {
+                  case "1":
+                     price = 37;
+                     break;
+                  case "2":
+                     price = 74;
+                     break;
+                  case "3":
+                     price = 111;
+                     break;
+                  case "6":
+                     price = 222;
+                     break;
+                  default:
+                     price = 74;
+               }
+            }
+            return price;
+         }
+
+         function getSelectedIndex() {
+            const selectedOption = document.querySelector('input[name="option1"]:checked');
+            return selectedOption ? (parseInt(selectedOption.value) == 6 ? 3 : parseInt(selectedOption.value) - 1) : 0;
+         }
+
+         function subtotalAfterDiscount(price, selectedIndex) {
+            const subsciptionSubtotalElements = document.querySelectorAll('.subscription-subtotal-after-discount');
+            const oneTimeSubtotalElements = document.querySelectorAll('.one-time-subtotal-after-discount');
+            const subtotalElements = document.querySelectorAll('.subtotal-after-discount');
+            const subtotalValue = price * (1 - (discountTable[subscribeRadio.checked ? 'subscribe' : 'one-time'][selectedIndex] / 100));
+            const oneTimeSubtotalValue = price * (1 - (discountTable['one-time'][selectedIndex] / 100));
+            const subscriptionSubtotalValue = price * (1 - (discountTable['subscribe'][selectedIndex] / 100));
+
+            subtotalElements.forEach(element => {
+               element.textContent = `$${subtotalValue.toFixed(2)}`;
+            });
+            subsciptionSubtotalElements.forEach(element => {
+               element.textContent = `$${subscriptionSubtotalValue.toFixed(2)}`;
+            });
+            oneTimeSubtotalElements.forEach(element => {
+               element.textContent = `$${oneTimeSubtotalValue.toFixed(2)}`;
+            });
+         }
+
+         document.querySelectorAll('input[name="option1"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+               let price;
+               switch (radio.value) {
+                  case "1":
+                     price = 37;
+                     break;
+                  case "2":
+                     price = 74;
+                     break;
+                  case "3":
+                     price = 111;
+                     break;
+                  case "6":
+                     price = 222;
+                     break;
+               }
+               document.querySelectorAll('.subtotal').forEach(subtotal => {
+                  subtotal.textContent = `$${price}`;
+               });
+            });
+            radio.addEventListener('change', () => {
+               const price = getPriceFromSelectedOption();
+               const selectedIndex = getSelectedIndex();
+               subtotalAfterDiscount(price, selectedIndex);
+
+               const amountOfSets = document.querySelectorAll('.amount-of-sets');
+               amountOfSets.forEach(element => {
+                  element.textContent = radio.value;
+               });
+               console.log(price, selectedIndex);
+            });
+         });
+
+         document.querySelectorAll('input[name="properties[_recurring]"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+               const refillCans = document.getElementById('Refill Cans');
+               if (refillCans.checked) {
+                  document.querySelectorAll('.refill-options').forEach(element => {
+                     element.textContent = 'Cans';
+                  });
+               } else {
+                  document.querySelectorAll('.refill-options').forEach(element => {
+                     element.textContent = 'Bottles';
+                  }
+                  );
+               }
+            });
+         });
+      });
+   </script>
+</body>
+
+</html>
